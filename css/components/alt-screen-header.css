@@ -10,3 +10,11 @@
   font-size: 28px;
   font-weight: 700;
 }
+
+.alt-header__column-icon {
+  margin-left: 30px;
+}
+
+.chat-title {
+  margin-right: -30px;
+}
