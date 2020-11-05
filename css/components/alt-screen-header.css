@@ -2,8 +2,12 @@
   display: flex;
   padding: 35px 35px 25px 35px;
   margin-bottom: 10px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.alt-header__column {
+  width: 33%;
 }
 
 .alt-header__title {
@@ -11,10 +15,20 @@
   font-weight: 700;
 }
 
-.alt-header__column-icon {
-  margin-left: 30px;
+.alt-header__column:first-child {
+  margin-right: auto;
 }
 
-.chat-title {
-  margin-right: -30px;
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
 }

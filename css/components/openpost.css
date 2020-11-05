@@ -71,6 +71,26 @@
   font-size: 14px;
 }
 
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__column-photo-members:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
 .open-post:nth-child(2) {
   border-bottom: var(--main-border);
   padding-bottom: 16px;

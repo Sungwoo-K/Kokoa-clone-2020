@@ -11,6 +11,7 @@
 @import "components/openpost.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -22,9 +23,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  padding-top: 25px;
   color: #2f363e;
-  height: 96vh;
 }
 
 .main-screen {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat w/ Ki Hwan - Kokoa Clone</title>
   </head>
+
   <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
@@ -29,17 +30,58 @@
         </a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title chat-title">Ki Hwan</h1>
+        <h1 class="alt-header__title">Ki Hwan</h1>
       </div>
       <div class="alt-header__column">
         <span><i class="fas fa-search fa-2x"></i></span>
-        <span class="alt-header__column-icon"><i class="fas fa-bars fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
       </div>
     </header>
 
-    <main class="main-screen">
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Tuesday, June 30, 2020
+      </div>
+
+      <div class="message-row">
+        <img src="screenshots/images (1).jpg"/>
+        <div class="message__content">
+          <span class="message__author">Ki Hwan</span>
+        
+          <div class="message__info">
+            <span class="message__bubble">롤 하쉴??</span>
+            <span class="message__time">21:22</span>
+          </div>
+        
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message__content">
+        
+          <div class="message__info">
+            <span class="message__bubble">ㄱㄱ</span>
+            <span class="message__time">21:23</span>
+          </div>
+        
+        </div>
+      </div>
+
     </main>
 
+    <form class="reply">
+      <div class="reply__column"><i class="far fa-plus-square fa-2x"></i></div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..."/>
+        <i class="far fa-smile fa-lg"></i>
+        <button><i class="fas fa-arrow-up fa-lg"></i></button>
+      </div>
+    </form>
+    
+    <div id="no-mobile">
+      <span>Your screen is too big!!</span>
+    </div>
+    
     <script
       src="https://kit.fontawesome.com/244f461546.js"
       crossorigin="anonymous"
