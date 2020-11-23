@@ -1,11 +1,17 @@
 .settings__setting {
-  padding: 28px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding: 28px 10px;
+  border-bottom: 1px solid rgba(198, 184, 141, 0.4);
   font-size: 20px;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
+}
+
+.settings__setting:hover {
+  box-shadow: 0px 0px 10px white;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .settings__setting i {

@@ -1,5 +1,12 @@
 .user-component {
   justify-content: space-between;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.user-component:hover {
+  box-shadow: 0px 0px 10px white;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .user-component,
@@ -32,7 +39,7 @@
 
 .user-component__subtitle {
   margin-top: 8px;
-  color: var(--font-gray);
+  color: rgb(160, 155, 140);
   font-size: 15px;
   font-weight: 600;
 }

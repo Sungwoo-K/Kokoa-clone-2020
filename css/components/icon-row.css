@@ -1,5 +1,5 @@
 .icon-row {
-  padding-right: 20px;
+  padding-right: 5px;
   padding-left: 5px;
   display: flex;
   justify-content: space-between;
@@ -9,21 +9,22 @@
 
 .icon-2 {
   margin-top: 50px;
-  padding-right: 150px;
 }
 
 .icon-row__icon {
   display: flex;
+  width: 25%;
   flex-direction: column;
   align-items: center;
 }
 
 .icon-row__icon i {
   font-size: 35px;
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--main-color);
 }
 
 .icon-row__icon span {
   margin-top: 18px;
+  font-size: 14px;
   font-weight: 600;
 }

@@ -36,10 +36,10 @@
 }
 
 .open-post__members .divider {
-  width: 1.4px;
+  width: 2px;
   height: 15px;
   margin: 0 5px;
-  background-color: var(--font-gray);
+  background-color: rgba(198, 184, 141, 0.4);
 }
 
 .open-post__members-status {

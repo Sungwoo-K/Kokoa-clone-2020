@@ -32,3 +32,8 @@
 .alt-header__column span:last-child {
   margin-left: 20px;
 }
+
+.alt-header__column span i:hover {
+  animation: iconBig 0.1s linear forwards;
+  will-change: transform;
+}

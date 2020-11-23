@@ -33,5 +33,5 @@
 .more-suggestions__icon span {
   margin-top: 13px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-color);
 }

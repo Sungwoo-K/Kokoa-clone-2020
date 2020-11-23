@@ -1,7 +1,7 @@
 #friends-display-link {
   display: block;
   text-align: center;
-  background-color: #fafafa;
+  background-color: rgba(198, 184, 141, 0.1);
   padding: 18px 0px;
   font-size: 16px;
   font-weight: 600;
@@ -9,7 +9,7 @@
 }
 
 #friends-display-link i {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(198, 184, 141, 0.4);
 }
 
 .friends-screen {
@@ -17,7 +17,7 @@
 }
 
 .friends-screen__channel {
-  border-top: var(--main-border);
+  border-top: solid 1px var(--main-color);
   margin-top: 10px;
 }
 
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  color: var(--font-gray);
+  color: var(--main-color);
 }
 
 @keyframes hideSplashScreen {
@@ -40,16 +40,99 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--black);
   position: absolute;
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   top: 0;
   justify-content: center;
   align-items: center;
   font-size: 60px;
-  color: #3c1e1e;
   animation: hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 6s;
+}
+
+@keyframes activeComment {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+  45% {
+    transform: rotatey(720deg);
+  }
+  50% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+#splash-screen i {
+  opacity: 0;
+  position: absolute;
+  color: var(--main-color);
+  margin-bottom: 180px;
+  animation: activeComment 2.5s ease-in-out forwards;
+  animation-delay: 3.3s;
+}
+
+@keyframes loading {
+  0% {
+    width: 0px;
+    background-color: rgb(5, 143, 163);
+  }
+  40% {
+    background-color: rgb(5, 143, 163);
+    width: 70%;
+  }
+  100% {
+    background-color: rgb(5, 143, 163);
+    width: 100%;
+  }
+}
+
+.loading-bar {
+  margin-top: 180px;
+  position: relative;
+  width: 250px;
+  height: 17px;
+  font-weight: 600;
+  border: solid 2px rgb(200, 159, 70);
+}
+
+.loading-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 0px;
+  height: 17px;
+  font-size: 17px;
+  text-align: center;
+  background-color: rgb(5, 143, 163);
+  animation: loading 3s linear forwards;
+}
+
+.loading-bar::after {
+  content: "LOADING...";
+  position: absolute;
+  font-size: 17px;
+  color: rgb(5, 143, 163);
+  text-align: center;
+  width: 100%;
+  height: 17px;
 }
